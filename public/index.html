@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Serve Mini App</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Chat Serve - Mini App</h1>
+      <p class="subtitle">Chatbot AI demo (có fallback local nếu chưa có API key).</p>
+
+      <section id="chatBox" class="chat-box" aria-live="polite"></section>
+
+      <form id="chatForm" class="chat-form">
+        <input
+          id="messageInput"
+          type="text"
+          placeholder="Nhập câu hỏi của bạn..."
+          autocomplete="off"
+          required
+        />
+        <button type="submit">Gửi</button>
+      </form>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
